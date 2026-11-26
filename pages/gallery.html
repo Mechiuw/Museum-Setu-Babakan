@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri — Museum Setu Babakan</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header header-solid">
+    <div class="container nav-wrapper">
+      <nav class="nav-group">
+        <a href="../index.html" class="nav-link">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang Museum</a>
+        <a href="culture.html" class="nav-link">Budaya Betawi</a>
+      </nav>
+      <a href="../index.html" class="brand-logo">
+        <!-- ASSET_LOGO: Ganti logo resmi -->
+        <img src="../assets/images/logo-elemen/REPLACE_LOGO.svg" alt="Logo Museum" onerror="this.style.display='none'">
+        <span>SETU BABAKAN</span>
+      </a>
+      <nav class="nav-group right">
+        <a href="collection.html" class="nav-link">Koleksi</a>
+        <a href="gallery.html" class="nav-link active">Galeri</a>
+        <a href="visitor-info.html" class="nav-link">Info Kunjungan</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Buka Menu">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="../index.html" class="nav-link">Beranda</a>
+    <a href="about.html" class="nav-link">Tentang Museum</a>
+    <a href="culture.html" class="nav-link">Budaya Betawi</a>
+    <a href="collection.html" class="nav-link">Koleksi</a>
+    <a href="gallery.html" class="nav-link">Galeri</a>
+    <a href="visitor-info.html" class="nav-link">Info Kunjungan</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Arsip Visual</span>
+      <!-- TEXT_GALLERY_PAGE_TITLE: Ganti judul halaman galeri -->
+      <h1>Galeri Dokumentasi</h1>
+      <!-- TEXT_GALLERY_PAGE_LEAD: Ganti deskripsi halaman galeri -->
+      <p>Rekam jejak visual kegiatan budaya, pementasan seni, ruang pamer museum, dan kehidupan masyarakat di Setu Babakan. Klik foto untuk memperbesar.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter Galeri -->
+      <div class="filter-bar" role="group" aria-label="Filter Galeri">
+        <button class="filter-btn active" data-gallery-filter="all">Semua Foto</button>
+        <button class="filter-btn" data-gallery-filter="museum">Museum</button>
+        <button class="filter-btn" data-gallery-filter="acara-adat">Acara Adat</button>
+        <button class="filter-btn" data-gallery-filter="tarian">Tarian</button>
+        <button class="filter-btn" data-gallery-filter="pakaian-adat">Pakaian Adat</button>
+        <button class="filter-btn" data-gallery-filter="makanan">Makanan</button>
+      </div>
+
+      <!-- Grid Galeri (Data di-load otomatis dari js/data.js) -->
+      <div id="full-gallery-grid" class="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX MODAL -->
+  <div id="gallery-lightbox" class="lightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-inner">
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="">
+      </div>
+      <div class="lightbox-details">
+        <div>
+          <h4 id="lightbox-title"></h4>
+          <p id="lightbox-caption" style="color: rgba(246,242,234,0.75); font-size: 0.9rem;"></p>
+        </div>
+        <div style="display: flex; gap: 0.5rem;">
+          <button id="lightbox-prev" class="lightbox-prev" aria-label="Sebelumnya">←</button>
+          <button id="lightbox-next" class="lightbox-next" aria-label="Berikutnya">→</button>
+          <button id="lightbox-close" class="lightbox-close" aria-label="Tutup">✕</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>© 2026 Museum Setu Babakan.</span>
+        <a href="visitor-info.html" style="color: var(--color-gold);">Informasi Kunjungan →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../js/interactions.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

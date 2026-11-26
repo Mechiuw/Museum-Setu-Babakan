@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koleksi — Museum Setu Babakan</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <header class="site-header header-solid">
+    <div class="container nav-wrapper">
+      <nav class="nav-group">
+        <a href="../index.html" class="nav-link">Beranda</a>
+        <a href="about.html" class="nav-link">Tentang Museum</a>
+        <a href="culture.html" class="nav-link">Budaya Betawi</a>
+      </nav>
+      <a href="../index.html" class="brand-logo">
+        <!-- ASSET_LOGO: Ganti logo resmi -->
+        <img src="../assets/images/logo-elemen/REPLACE_LOGO.svg" alt="Logo Museum" onerror="this.style.display='none'">
+        <span>SETU BABAKAN</span>
+      </a>
+      <nav class="nav-group right">
+        <a href="collection.html" class="nav-link active">Koleksi</a>
+        <a href="gallery.html" class="nav-link">Galeri</a>
+        <a href="visitor-info.html" class="nav-link">Info Kunjungan</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Buka Menu">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <a href="../index.html" class="nav-link">Beranda</a>
+    <a href="about.html" class="nav-link">Tentang Museum</a>
+    <a href="culture.html" class="nav-link">Budaya Betawi</a>
+    <a href="collection.html" class="nav-link">Koleksi</a>
+    <a href="gallery.html" class="nav-link">Galeri</a>
+    <a href="visitor-info.html" class="nav-link">Info Kunjungan</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Katalog Dokumentasi</span>
+      <!-- TEXT_COLLECTION_PAGE_TITLE: Ganti judul halaman koleksi -->
+      <h1>Koleksi & Arsip Museum</h1>
+      <!-- TEXT_COLLECTION_PAGE_LEAD: Ganti deskripsi katalog koleksi -->
+      <p>Kumpulan dokumentasi artefak, busana adat, seni pertunjukan, dan warisan kuliner Betawi yang dikurasi untuk tujuan edukasi.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!-- Filter Kategori Koleksi -->
+      <div class="filter-bar" role="group" aria-label="Filter Koleksi">
+        <button class="filter-btn active" data-collection-filter="all">Semua Koleksi</button>
+        <button class="filter-btn" data-collection-filter="acara-adat">Acara Adat</button>
+        <button class="filter-btn" data-collection-filter="pakaian-adat">Pakaian Adat</button>
+        <button class="filter-btn" data-collection-filter="tarian">Seni Tari</button>
+        <button class="filter-btn" data-collection-filter="makanan">Kuliner</button>
+        <button class="filter-btn" data-collection-filter="museum">Artefak Museum</button>
+      </div>
+
+      <!-- Grid Koleksi Editorial (Data di-load otomatis dari js/data.js) -->
+      <div id="full-collection-grid" class="editorial-collection-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+        <span>© 2026 Museum Setu Babakan.</span>
+        <a href="gallery.html" style="color: var(--color-gold);">Buka Galeri Foto →</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/gallery.js"></script>
+  <script src="../js/interactions.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
